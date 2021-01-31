@@ -1,0 +1,51 @@
+.Connect {
+  margin: 0 -40px;
+  background-image: url("./../../Images/background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+
+  // Create Parallax Effect
+  background-attachment: fixed;
+
+  // Center Vertically and Horizontally MediaLinks
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Name {
+  color: white;
+  font-size: 55px;
+}
+
+.MediaLinks {
+  a {
+    color: white;
+    font-size: 40px;
+    margin: 12px;
+    opacity: 0.5;
+  }
+
+  i {
+    transition: transform 0.5s;
+  }
+
+  i:hover {
+    transform: scale(1.3);
+  }
+
+  .LinkedIn:hover {
+    opacity: 1;
+  }
+
+  .GitHub:hover {
+    opacity: 1;
+  }
+
+  .Email:hover {
+    opacity: 1;
+  }
+}

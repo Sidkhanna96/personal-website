@@ -1,0 +1,16 @@
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    color: #083858;
+    text-align: left;
+  }
+}
+
+a {
+  color: #0eacef;
+  text-decoration: none;
+}
