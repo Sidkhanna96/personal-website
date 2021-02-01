@@ -1,6 +1,10 @@
 import "./About.scss";
 
 const About = () => {
+  const openResume = () => {
+    return window.open("./../Resume/SiddhantKhannaResume.pdf", "_blank");
+  };
+
   return (
     <div className="About">
       <h2>About me:</h2>
@@ -22,6 +26,11 @@ const About = () => {
           </a>
           .
         </p>
+      </div>
+      <div className="Resume">
+        <button className="ResumeButton" onClick={openResume}>
+          View Resume
+        </button>
       </div>
     </div>
   );

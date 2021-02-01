@@ -6,8 +6,6 @@ const Main = () => {
     <div>
       <Connect />
       <About />
-      {/* About */}
-      {/* Projects */}
     </div>
   );
 };
