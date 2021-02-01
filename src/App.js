@@ -1,14 +1,11 @@
 import { Route, Switch } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 import Main from "./Components/Main/Main";
-import Loader from "./Components/Loader/Loader";
 import "./App.scss";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false);
-
   // Loading Screen
+  // const [isLoading, setIsLoading] = useState(false);
   // useEffect(() => {
   //   setIsLoading(false);
   //   setTimeout(() => setIsLoading(false), 1200);
@@ -16,15 +13,11 @@ function App() {
 
   return (
     <div>
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div className="App">
-          <Switch>
-            <Route path="/" component={Main} exact />
-          </Switch>
-        </div>
-      )}
+      <div className="App">
+        <Switch>
+          <Route path="/" component={Main} exact />
+        </Switch>
+      </div>
     </div>
   );
 }
